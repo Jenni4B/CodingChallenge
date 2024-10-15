@@ -42,7 +42,7 @@ submitStep.addEventListener('click', function() {
 
 resetStep.addEventListener('click', function(){
     step = 1; // reset to 1
-    alert("Step has been reset")
+    alert("Step has been reset");
 
 })
 
