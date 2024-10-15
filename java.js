@@ -1,14 +1,26 @@
-// Buttons
+
+// Button variables
+
+    // Controls the counter
 const clicker = document.getElementById('clicker');
 const reset = document.getElementById('reset');
 const minus = document.getElementById('minus');
-const submitNum = document.getElementById('submitNum');
-const submitStep = document.getElementById('submitStep');
 
-// User inputs and main display
-const countDisplay = document.getElementById('countDisplay');
-const userInput = document.getElementById('userInput');
+
+// Controls the increment/decrement number
+
+// let's the user control the increment/decrement amount
 const userStepInt = document.getElementById('userStepInt');
+const submitStep = document.getElementById('submitStep');
+const resetStep = document.getElementById('resetStep');
+
+// User inputs and main counter display
+const countDisplay = document.getElementById('countDisplay');
+
+// Lets the user choose a starting number
+const userInput = document.getElementById('userInput');
+const submitNum = document.getElementById('submitNum'); 
+
 
 // Counter default
 let count = 0;
@@ -27,6 +39,12 @@ submitStep.addEventListener('click', function() {
     updateStep(stepInt); // Update the step
 
 });
+
+resetStep.addEventListener('click', function(){
+    step = 1; // reset to 1
+    alert("Step has been reset")
+
+})
 
 // Adds to the counter
 clicker.addEventListener('click', function() {
